@@ -6,13 +6,17 @@ console.log(alert("Here is the result: " + numberСonversionFarenheit));
 const monthJanuary = 31;
 console.log("Here are the minutes in this month's: ", monthJanuary * 24 * 60);
 
+// 3
+
 let healthPoints = 100;
 let energyPoints = 100;
 
-const resultOfEnergyPoints =  100 - 10
-const resultOfHealthPoints = 100 - 20
+healthPoints -= 20;
+energyPoints -= 15; 
 
-console.log("Your health point and energy point are there: " , resultOfHealthPoints + "hp" ,"|", resultOfEnergyPoints + "en" );
+console.log("Your health point and energy point are there: " , healthPoints , "hp" ,"|", energyPoints , "en" );
+
+// 
 
 const commodityPrice = prompt("Enter a price here: ") 
 let theDiscountPrice = commodityPrice * 0.1
@@ -37,7 +41,7 @@ console.log("Here is the result: ", Number.parseInt(stringNumber));
 // 8
 
 const rootOfTheNumber = prompt("enter the number from which you want to extract the root: ");
-let resultOfTheNumberRoot = Math.sqrt(rootOfTheNumber);
+const resultOfTheNumberRoot = Math.sqrt(Number(rootOfTheNumber));
 alert("Here is the root of your number which you have choosed: " + resultOfTheNumberRoot);
 
 // 9
