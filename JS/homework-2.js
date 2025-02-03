@@ -51,4 +51,3 @@ console.log("Here is the result: ", Number.parseInt(stringsAndNumbers));
 const methodToString = 456;
 const stringValue = methodToString.toString()
 console.log("Here is your string: ", "|" , stringValue) 
-
