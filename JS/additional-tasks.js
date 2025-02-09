@@ -102,7 +102,7 @@ console.log(valumeOfCylinder.toFixed(1), "cm^3")
 let firstCathetus = 3;
 let secondCathetus = 4;
 
-let firstSquared = Math.pow(firstCathetus, 2);
+let firstSquared = Math.pow(firstCathetus, 2);  
 let secondSquared = Math.pow(secondCathetus, 2);
 
 const hypotenuse = Math.sqrt(firstSquared + secondSquared);
