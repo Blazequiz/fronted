@@ -25,30 +25,22 @@ switch (select) {
 // Створити розмітку з полем введення, що приймає рядок та кнопкою. При натисканні на кнопку перевіряти,
 //  чи введений рядок є днем тижня (наприклад: "понеділок", "вівторок" і т.д.), виводити відповідне повідомлення про робочий день або вихідний.
 
-const dayOfTheWeek = "Понеділок";
+const dayOfTheWeek = "Середа";
 
 switch (dayOfTheWeek) {
   case "Понеділок":
-    console.log("Понеділок - робочий день");
-    break;
   case "Вівторок":
-    console.log("Вівторок - робочий день");
-    break;
   case "Середа":
-    console.log("Середа - робочий день");
-    break;
   case "Четвер":
-    console.log("Четвер - робочий день");
-    break;
   case "П`ятниця":
-    console.log("П`ятниця - робочий день");
-    break;
-  case "Суббота":
-    console.log("Суббота - Вихідний день!");
-    break;
+       console.log(`${dayOfTheWeek} - Робочий день`);
+      break;
   case "Неділя":
-    console.log("Неділя - Вихідний день!");
+  case "Суббота":
+    console.log(`${dayOfTheWeek} - Вихідний день!`);
     break;
+    default:
+      console.log("Invalid Value");   
 }
 
 // Створити розмітку з полем введення, що приймає номер місяця та кнопкою. 
@@ -92,40 +84,22 @@ console.log(season);
 const daysInMonth = "January";
 
 switch (daysInMonth) {
-  case  "January":
-    console.log(31);
-    break;
   case  "February":
     console.log(28);
     break;
-  case  "March":
-    console.log(31);
-    break;
-  case  "April":
+    case  "June",
+          "April",
+          "August",
+          "Semptember",
+          "October":
     console.log(30);
     break;
-  case  "May":
-    console.log(31);
-    break;
-  case  "June":
-    console.log(30);
-    break;
-  case  "Juli":
-    console.log(31);
-    break;
-  case  "August":
-    console.log(30);
-    break;
-  case  "Semptember":
-    console.log(30);
-    break;
-  case  "October":
-    console.log(30);
-    break;
-  case  "November":
-    console.log(31);
-    break;
-  case  "December":
+    case  "December",
+          "November",
+          "Juli",
+          "May",
+          "March",
+          "January":
     console.log(31);
     break;
     default:
@@ -172,8 +146,9 @@ switch (chooseAnOperator) {
   case "/":
     if (Number(enterFirstNumber) === 0 || Number(enterSecondNumber) === 0) {
       console.log("Invalid Value");
-    } 
+    } else {
     result = Number(enterFirstNumber) / Number(enterSecondNumber)
+    }
     break;
     default: 
       console.log("Something went wrong");
