@@ -46,17 +46,11 @@ const arrayOriginal = ["true", "Kiwi", "Monkong", "Singu", "Mango", "Ajax", "Pol
 // push(), pop(), unshift(), shift(),
 // slice(), splice(), concat() за власним бажанням!
 
-let newArr = arrayOriginal.pop()
-newArr = arrayOriginal.shift()
-newArr = arrayOriginal.slice(3, 6)
+arrayOriginal.pop()
+arrayOriginal.shift()
+let newArr = arrayOriginal.slice(3, 6)
 let secondArr = arrayOriginal.slice(0, 3)
 console.log(newArr);
-console.log(secondArr);
 let arrayNew = newArr.concat(secondArr);
 
 console.log(arrayNew);
-
-//! Код виконаного завдання
-
-// console.log("arrayOriginal:", arrayOriginal);
-// console.log("arrayNew:", arrayNew);
