@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #validation-input {
+    border: 3px solid #bdbdbd;
+      }
+    #validation-input.valid {
+    border-color: #4caf50;
+      }
+    #validation-input.invalid {
+    border-color: #f44336;
+      }
+  </style>
+</head>
+<body>
+  <a href = "./homework-18.html">return to homework 18</a>
+  <!-- tasks -->
+   <!-- 1 -->
+  <form>
+  <p>Choose a color:</p>
+  <label>
+    <input type="radio" name="color" value="red" checked />
+    Red
+  </label>
+  <label>
+    <input type="radio" name="color" value="white" />
+    White
+  </label>
+  <label>
+    <input type="radio" name="color" value="green" />
+    Green
+  </label>
+</form>
+<!-- 2 -->
+<input type="text" placeholder="Ваше ім'я?" id="name-input" />
+<h1>Привіт, <span id="name-output">незнайомець</span>!</h1>
+ <input
+
+  type="text"
+
+  id="validation-input"
+
+  data-length="6"
+
+  placeholder="Введи 6 символів"/>
+  <br/>
+<!-- 3 -->
+<input id="font-size-control" type="range" />
+<br/>
+<span id="text">Абракадабра!</span>
+<!--  -->
+  <script src = "./JS/homework-19.js" type="module"></script>
+</body>
+</html>
